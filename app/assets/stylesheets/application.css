@@ -1,0 +1,31 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ .main_container {
+   padding-top: 2rem;
+ }
+
+ input[type="text"]:focus {
+  border-color: rgb(0, 132, 137) !important;
+ }
+
+ .input__text {}
+
+ /* Main teal: rgb(0, 132, 137) */
+ /* Main red: #FF5A5F */
+ /* Main dark gray: #484848 */
+ /* Main white: #ffffff */
+ /* Main purple: rgb(70, 4, 121) */

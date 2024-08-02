@@ -1,0 +1,94 @@
+.header__container {
+  display: flex;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 0.8rem 1rem 1.5rem;
+
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9;
+}
+
+.header__logo-container {
+  display: flex;
+  margin-right: 1.8rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.header__logo-search-container {
+  display: flex;
+}
+
+.header__logo-img {
+  height: 35px;
+  width: 35px;
+  background-size: contain;
+  display: block;
+}
+
+// LISTING HEADER 
+.header__listing {
+  border-bottom: 1px solid #ccc;
+  background-color: white;
+}
+
+.header__listing .header__logo-img {
+  background-image: image-url(("logo/01_airbnb-logo-sm-pink.png"));
+}
+
+.header__listing p,
+.header__listing a {
+  color: #484848;
+}
+
+// LANDING HEADER 
+.header__landing {}
+
+.header__landing .header__logo-img {
+  background-image: image-url(("logo/01_airbnb-logo-sm-white.png"));
+}
+
+// Logged In Navbar
+.header__navbar-profile {
+  cursor: pointer;
+  border: none;
+  background-color: inherit;
+  height: 80px;
+  padding: 0 1rem;
+}
+
+button.header__navbar-profile:focus {
+  outline: none;
+}
+
+.header__navbar-profile-photo-container {
+  border-radius: 50%;
+  box-shadow: rgb(235, 235, 235) 0px 0px 0px 2px !important;
+  overflow: hidden;
+  width: 30px;
+  height: 30px;
+}
+.header__navbar-profile-photo {
+  max-width: 30px;
+  height: auto;
+}
+
+// Listing Show Page Header
+.header__listing-show {
+  position: relative;
+  border-bottom: 1px solid transparent;  
+}
+
+.header__listing-show .header__logo-img, 
+.header__checkout .header__logo-img {
+  background-image: image-url(("logo/01_airbnb-logo-sm-purple.png"));
+}
+
+.header__listing-show .header__search-input::placeholder {
+  content: 'Search';
+}

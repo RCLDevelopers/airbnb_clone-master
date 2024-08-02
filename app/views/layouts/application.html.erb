@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Vacation Rentals, Homes, Experiences &amp; Places - Aerbnb</title>
+    <meta property="og:title" content="Vacation Rentals, Homes, Experiences &amp; Places - Airbnb">
+
+    <% google_api_key = Rails.application.credentials.google[:api_key] %>
+    
+    <%= javascript_include_tag "https://maps.googleapis.com/maps/api/js?key=#{google_api_key}&libraries=places" %>
+
+    <link rel="shortcut icon" href="<%= image_url('favicon/airbnb_logotype_favicon.ico') %>" type="image/x-icon">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Caveat&display=swap" rel="stylesheet">
+    
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+
+    <script type="text/javascript">
+      window.logoWhiteSmall = "<%= image_url('background/landing/01_airbnb-landing-main.jpg') %>"
+      window.landingHeroBg = "<%= image_url('logo/01_airbnb-logo-sm-white.png') %>"
+      window.userPhoto = "<%= image_url('user/00-default-user-photo.jpg') %>"
+
+      window.amenitiesParking = "<%= image_url('amenities/01_parking.png') %>"
+      window.amenitiesKitchen = "<%= image_url('amenities/03_kitchen.png') %>"
+      window.amenitiesWasher = "<%= image_url('amenities/04_washer.png') %>"
+      window.amenitiesDryer = "<%= image_url('amenities/05_dryer.png') %>"
+      window.amenitiesWifi = "<%= image_url('amenities/07_wifi.png') %>"
+      window.amenitiesTv = "<%= image_url('amenities/08_tv.png') %>"
+      window.amenitiesBathroom = "<%= image_url('amenities/09_bathroom-essentials.png') %>"
+      window.amenitiesBedroom = "<%= image_url('amenities/10_bedroom-comforts.png') %>"
+      window.amenitiesCoffee = "<%= image_url('amenities/11_coffee-maker.png') %>"
+      window.amenitiesHair = "<%= image_url('amenities/12_hair-dryer.png') %>"
+      window.amenitiesDishwasher = "<%= image_url('amenities/06_dishwasher.png') %>"
+      window.amenitiesSelfcheckin = "<%= image_url('amenities/02_self-check-in.png') %>"
+
+    </script>
+
+  </head>
+
+  <body class="">
+    <%= yield %>
+  </body>
+</html>
